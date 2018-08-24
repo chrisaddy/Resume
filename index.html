@@ -2,97 +2,65 @@
 
 <head>
      <title>Christopher Addy Resume</title>
-     <!--<link type="text/css" rel="stylesheet" href="resume-style.css">-->
-<style>
-	html {
-       max-width: 100%;
-       margin: 0; padding: 6em;
-       color: #000;
+     <style>
+       html {
+	   max-width: 100%;
+	   margin: 0;
+	   /*padding: 6em;*/
        }
 
-       body { 
-       font: 1em Baskerville; 
-       line-height: 1.5em; 
-       background: url(images/noise.jpg); 
-       max-width: 100%;
-       color: #000;
+       body {
+	   font: 1em Baskerville;
+	   line-height: 1.5em; 
+	   max-width: 100%;
        }
 
-       .clear {
-       clear: both;
-       }
-
-       .last-job {
-       margin-bottom: 0;
-       }
+       .clear {clear: both;}
 
        .wrapper {
-       width: 57.5em;
-       margin: 2.5em auto 3.75em; 
+	width: 57.5em;
        }
 	
-	h1 { 
-       margin: 0 0 16px 0; 
-       padding: 0 0 16px 0; 
-       font-size: 42px; 
-       font-weight: bold;
-       font-family: Montserrat;
-       letter-spacing: -2px; 
-       border-bottom: 1px solid #999;
+       h1 { 
+	   margin: 0 0 16px 0; 
+	   padding: 0 0 16px 0; 
+	   font-size: 42px;
+	   font-weight: bold;
+	   font-family: Montserrat;
+	   letter-spacing: -2px; 
+	   border-bottom: 1px solid #999;
        }
 
        h2 { 
-       font-size: 1.125em; 
-       margin: 0 0 .25em 0; 
-       position: relative; 
+	   font-size: 1.125em; 
+	   margin: 0 0 .25em 0; 
+	   position: relative; 
        }
 
-       .job-location { 
-       position: absolute; 
-       bottom: 0;
-       right: 5em;
-       font-size: 1em; 
-       /*color: #333;*/
-       font-weight: normal;
+       .date { 
+	   position: absolute; 
+	   bottom: 0;
+	   right: 5em;
+	   font-size: 1em; 
+	   font-weight: normal;
        }
 
-       .title {
-       font-size: .875em;
-       }
+       .title {font-size: .875em;}
 
-       .address {
-       float: right;
-       }
+       p {margin: 0 0 .5em 0;}
 
-       p { 
-       margin: 0 0 .5em 0;
-       }
+       a {text-decoration: none; color:#000;}
 
-       a {
-       text-decoration: none;
-       color: #555;
-       }
+       a:hover {color: #999;}
 
-       a:hover {
-       color: #999;
-       }
+       ul {margin: 0 0 .125em .625em;}
 
-       ul {
-       margin: 0 0 .125em .625em;
-       }
-
-       .professional-summary {
-       float: left;
-       }
-
-       .left-column, .center-column, .right-column {
-       display: inline-block;
-       }
+       .professional-summary {float: left;}
 
        dt {
        font-weight: bold;
        font-size: 1.125em;
-       text-align: right;
+       text-align: left;
        padding: 0 1em 0 0;
        width: 8%;
        float: left;
@@ -106,90 +74,78 @@
        dd.clear {
        float: none;
        margin: 0;
-
        }
 
-       .email {
-       font-size: 1em;
-       }
-
-       .tel {
-       font-size: 1em;
-       }
-
-       .degree, .accomplishments {
-       font-weight: bold;
-       font-size: 1em;
-       }
 	</style>
      <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
      <link href="/foundicon_icons_general/stylesheets/general_foundicons.css" rel="stylesheet">
 </head>
 <body>
+  <div class="wrapper">
+    <!-- Name and contact-->
+    <div class="contact-info" class="vcard">
+      <h1 class="name">Christopher Addy</h1>  
+      <p><span class="email"><a href="mailto:chris.william.addy@gmail.com">chris.william.addy@gmail.com</a></span></br>
+	<span class="phone">484-464-1249</span>
+      </p>
+    </div>
 
-    <div class="wrapper">      
-        <div class="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="name">Christopher Addy</h1>
-        
-            <p>
-		    <span class="phone">484-464-1249</span></br>
-		<span class="email"><a href="mailto:chris.william.addy@gmail.com">chris.william.addy@gmail.com</a></span>
-            </p>
-        </div>
-                
-<dd>
-            <div class="professional-skills">
-		    <dt>Skills</dt>
-		    <dd>
-		<p>R, Python, neural networks, random forests, dimensionality reduction, structural equation modeling, data visualization, Bayesian analysis/probabilistic programming, graphical models, stochastic processes, SQL, git, Docker, Anaconda</p>
-		    </dd>
-	</div>
+    <div class="clear"></div>
+    <!-- Skills -->
+      <div class="professional-skills">
+	<dt>Skills</dt>
+	<dd>
+	  <p>
+	    R, Python, neural networks, random forests, dimensionality reduction, structural equation modeling, data visualization, Bayesian analysis/probabilistic programming, graphical models, stochastic processes, SQL, git, Docker, Anaconda
+	  </p>
 	</dd>
-        
-        <div class="clear"></div>
-        
-        <dl>
-	<dt>Experience</dt>
-            <dd>
-	    <div class="last-job">
-	    	<h2>Research Manager<span class="title">&mdash;Algorhythm</span><span class="job-location">2017 &ndash; Present</span></h2>
-		<p>As direct report to CEO, led all statistical modelling of core products. Data primarily consisted of youth self-reported psychometric evaluations. Managed a small data science team, including a data engineer and quantitative psychologists, to bring contemporary modeling and data analysis techniques to these and other social science problems.</p>
-		<ul>
-		  <li>Developed unsupervised learning techniques, notably factor analysis, principal component analysis, and KNN models, to score and categorize young people in youth development programs on key social and emotional learning metrics.</li>
-		  <li>Built supervised learning models using ensemble methods to give recommendations to those working with youth to help boost their key social and emotional learning metrics.</li>
-		  <li>Designed benchmark predictive models.</li>
-		  <li>Created production-ready models and helped bridge the gap between theory and software development. In the process, learned valuable general-purpose software-design principles from an international team of software developers.</li>
-			<li>Continued with responsibilities begun as a consultant.</li>
-		</ul>
-	</div>
-          <h2>Statistical Consultant<span class="title">&mdash;Algorhythm</span><span class="job-location">2016 &ndash; 2017</span></h2>
-            <p>Reported to CEO to test and validate existing models, construct new ones and generate technical reports for those and other analyses as necessary.</p>
-          <h2>Operations Manager<span class="title">&mdash;Jomar Technologies</span><span class="job-location">2011 &ndash; 2015</span></h2>
-            <p>Oversaw business operations for an engineering consulting firm, including evaluating internal processes changes, handling vendor procurement agreements.</p>
-            <ul>
-              <li>Implemented processes for updating and tracking client data to maximize retention and minimize costs.</li>
-              <li>Managed and processed company financial information including accounts receivable/payable and purchasing, compiling fiscal year-end tax reports, reviewing partner agreements and legal documents.</li>
-              <li>Facilitated in integrating legacy project management, purchasing, client services, marketing and back-end financial software systems under a single framework, leading to an increase in clients and annual revenue.</li>
-            </ul>
-          </dd>
-</dl>
-	    <div class="clear">
-	   <dt>Education</dt>
-	   <dd>
-	<h2><span class="degree">Master of Science</span> in Statistics - Temple University<span class = "job-location">2017</span></h2>
+      </div>
+    <div class="clear"></div>
+
+      <div class="professional-skills">
+      <dt>Experience</dt>
+      <dd>
+	  <h2>Research Manager<span class="title"> &mdash; Algorhythm</span><span class="date">2017&ndash;Present</span></h2>
+	  <p>
+	    As direct report to CEO, led all statistical modelling of core products. Data primarily consisted of youth self-reported psychometric evaluations. Managed a small data science team, including a data engineer and quantitative psychologists, to bring contemporary modeling and data analysis techniques to these and other social science problems.
+	  </p>
+	  <ul>
+	    <li>Developed unsupervised learning techniques, notably factor analysis, principal component analysis, and KNN models, to score and categorize young people in youth development programs on key social and emotional learning metrics.</li>
+	    <li>Built supervised learning models using ensemble methods to give recommendations to those working with youth to help boost their key social and emotional learning metrics. Designed benchmark predictive models.</li>
+	    <li>Created production-ready models and helped bridge the gap between theory and software development. In the process, learned valuable general-purpose software-design principles from an international team of software developers.</li>
+	    <li>Continued with responsibilities begun as a consultant.</li>
+	  </ul>
+	<h2>Statistical Consultant<span class="title"> &mdash; Algorhythm</span><span class="date">2016&ndash;2017</span></h2>
+	<p>
+	  Reported to CEO to test and validate existing models, construct new ones and generate technical reports for those and other analyses as necessary.
+	</p>
+	<h2>Operations Manager<span class="title"> &mdash; Jomar Technologies</span><span class="date">2011&ndash;2015</span></h2>
+	<p>
+	  Oversaw business operations for an engineering consulting firm, including evaluating internal processes changes.
+	</p>
+	<ul>
+	  <li>Implemented processes for updating and tracking client data to maximize retention and minimize costs.</li>
+	  <li>Managed and processed company financial information including accounts receivable/payable and purchasing, and compiling financial reports.</li>
+	  <li>Facilitated in integrating project management, client services, financial systems under a single framework, leading to an increase in clients and annual revenue.</li>
+	</ul>
+	</dd>
+      </div>
+
+    <!--Education-->
+    <div class="clear"></div>
+      <dd>
+	  <dt>Education</dt>
+	    <dd>
+	      <h2>Master of Science in Statistics &mdash; <span class="title">Temple University</span><span class = "date">2017</span></h2>
+	      <h2>Bachelor of Arts in Economics &mdash; <span class="title">Lehigh University</span><span class="date">2010</span></h2>
 	    </dd>
-            <dd>
-		    <h2><span class="degree">Bachelor of Arts</span> in Economics - Lehigh University<span class="job-location">2010</span></h2>
-            </dd>
-        	<dd class="clear"></dd>
+      </dd>
+
             
-	    <div class = "clear">
-	      <dt>Publications</dt>
+	    <div class = "clear"></div>
+	      <dt>CRAN</dt>
 	      <dd>
-		      <h2>CRAN Package</h2>
+		      <h2>R Package for Reduced Rank Regression</h2>
 		      <ul>
 			 <li>rrr &mdash; <a href="https://cran.r-project.org/package=rrr"</a>https://cran.r-project.org/package=rrr</li>
 		      </ul>
